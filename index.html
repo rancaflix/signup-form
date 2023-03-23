@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Signup Form</title>
+</head>
+<body>
+    <div id="container">
+        <div id="side">
+            <div id="title-container">
+                <h1 id="title"><img src="/img/city.png" id="logo"> Baarle</h1>
+            </div>
+        </div>
+        <div id="form-container">
+            <form action="/index.html" method="post">
+                <legend>Welcome! This service may not be real. Sign up anyways.</legend>
+                <fieldset>
+                        <label for="first-name">First Name
+                        <input type="text" name="first-name" id="first-name" required></label>
+                        <label for="last-name">Last Name
+                        <input type="text" name="last-name" id="last-name"></label>   
+                        <label for="mail">E-Mail
+                        <input type="email" name="email" id="mail" required></label>    
+                        <label for="phone-number">Phone Number
+                        <input type="tel" name="phone-number" id="phone-number"></label>
+                        <label for="pwd">Password
+                        <input type="password" name="password" id="pwd" required></label>
+                        <label for="confirm-password">Confirm Password
+                        <input type="password" name="confirm-password" id="confirm-password" required></label>
+                </fieldset>
+                    <button type="submit" id="submit-btn">Create Account</button>
+            </form>
+            <div id="login">
+                <p>Already have an account? <a href="">Log in.</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
