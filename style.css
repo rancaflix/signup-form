@@ -52,13 +52,15 @@ body {
 #form-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     width: 65%;
     padding: 0 0 0 3rem;
     margin-top: 10%;
 }
 
+label {
+    position: relative;
+}
 legend {
     margin-bottom: 2rem;
     font-size: 1.5rem;
@@ -71,27 +73,28 @@ form {
 fieldset {
     border: 0;
     display: grid;
-    width: 100%;
+    width: 90%;
     grid-template-columns: auto auto;
-    row-gap: 1rem;
-    column-gap: 3rem;
+    row-gap: 2rem;
+    column-gap: 7rem;
 }
 
 input {
     display: block;
-    width: 80%;
+    width: 100%;
     margin-top: 0.2rem;
+    box-sizing: border-box;
 }
 
 input:focus {
-    border: 0.3rem solid rgb(138, 81, 15);
+    border: 0.3rem solid rgb(0, 0, 0);
     border-radius: 10%;
 }
 
 #submit-btn {
     padding: 1rem;
     font: bold 1rem 'Rubik';
-    margin: 1rem;
+    margin: 3rem 1rem 0rem 1rem;
     border: 0.3rem solid white;
     background-color: var(--dark-blue);
     color: white;
@@ -112,6 +115,13 @@ p > a:hover {
     text-decoration: underline;
 }
 
-.error {
-    border: 0.1rem solid red;
+input:focus:required:invalid, .error {
+    border: 0.2rem solid red;
+}
+
+span  {
+    color: yellow;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
