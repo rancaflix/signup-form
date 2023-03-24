@@ -14,6 +14,26 @@ body {
     color: white;
 }
 
+#container {
+    display: flex;
+    background-color: var(--dark-blue);
+    width: 98vw;
+    height: 98vh;
+}
+
+#side {
+    background-image: url('https://i.pinimg.com/originals/b4/27/83/b42783d9a476a84e92645e2a2f0cf689.jpg');
+    width: 35%;
+    position: relative;
+}
+
+#side > p {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: black;   
+}
+
 #title-container {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -28,18 +48,6 @@ body {
     height: 100px;
     filter: invert(1);
     margin-right: 1rem;
-}
-
-#container {
-    display: flex;
-    background-color: var(--dark-blue);
-    width: 98vw;
-    height: 98vh;
-}
-
-#side {
-    background-image: url('https://i.pinimg.com/originals/b4/27/83/b42783d9a476a84e92645e2a2f0cf689.jpg');
-    width: 35%;
 }
 
 #title {
